@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>repl.it</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <script src="script.js">
+        </script>
+
+        <h1> Climate Change (trivia and solutions) </h1>
+
+        <svg height="100" width="600">
+            <!-- sun -->
+            <circle cx="200" cy="50" r="25" fill="gold" />
+            <!-- up and down -->
+            <line x1="200" y1="0" x2="200" y2="15" stroke="orange" stroke-width="2" />
+            <line x1="200" y1="100" x2="200" y2="85" stroke="orange" stroke-width="2" />
+            <!-- left and right -->
+            <line x1="150" y1="50" x2="165" y2="50" stroke="orange" stroke-width="2" />
+            <line x1="235" y1="50" x2="250" y2="50" stroke="orange" stroke-width="2" />
+            <!-- diagonal -->
+            <line x1="165" y1="15" x2="180" y2="25" stroke="orange" stroke-width="2" />
+            <line x1="240" y1="15" x2="225" y2="25" stroke="orange" stroke-width="2" />
+            <line x1="165" y1="85" x2="180" y2="75" stroke="orange" stroke-width="2" />
+            <line x1="240" y1="85" x2="225" y2="75" stroke="orange" stroke-width="2" />
+            <!-- cloud -->
+            <circle cx="375" cy="40" r="20" fill="lightblue" />
+            <circle cx="380" cy="65" r="20" fill="lightblue" />
+            <circle cx="400" cy="40" r="20" fill="lightblue" />
+            <circle cx="425" cy="35" r="20" fill="lightblue" />
+            <circle cx="405" cy="75" r="20" fill="lightblue" />
+            <circle cx="400" cy="45" r="20" fill="lightblue" />
+            <circle cx="445" cy="50" r="20" fill="lightblue" />
+            <circle cx="430" cy="70" r="20" fill="lightblue" />
+        </svg>
+
+        <!-- Pollution -->
+        <h2> Pollution </h2>
+        <p> Play our pollution trivia! </p>
+
+        <!-- Trivia -->
+        <script>
+            function pollution() {
+                alert("This is the pollution trivia.")
+                //first question
+                var qone = prompt("What causes pollution? \n A) Cars \n B) Animals \n C) Agriculture \n D) Both A and C")
+                qone = qone.toLowerCase()
+                if (qone=="d") {
+                    alert("Correct!")
+                } 
+                else {
+                    alert("Incorrect! the correct answer is D.")
+                }
+                alert("When cars burn gasoline, they emit pollutants like carbon dioxide. Gasoline fumes escape into the air even when we pump gasoline into our fuel tanks. A car emits carbon monoxide when the carbon in fuel doesn't burn completely. These gases go into our atmosphere, and cause a greenhouse effect on Earth. Agriculture also causes pollution. Most farmers always use pesticides and fertilizers in order to make their crops grow better. It results in better crops, but when it rains, the chemicals run off into the water polluting the water, and dangers marine animals.")
+                //second question
+                var qtwo = prompt("How many people die due to air pollution each year? \n A) 58,000 \n B) 1.2 million \n C) 4.6 million \n D) 593,000")
+                qtwo = qtwo.toLowerCase()
+                if (qtwo=="c") {
+                    alert("Correct!")
+                }
+                else {
+                    alert("Incorrect! The correct answer is C.")
+                }
+                alert("The World Health Organization estimates that 4.6 million people die each year from causes directly attributable to air pollution. Many of these mortalities are attributable to indoor air pollution. Worldwide more deaths per year are linked to air pollution than to automobile accidents.")
+                //third question
+                var qthree = prompt("How much has the average temperature increased over the last century? \n A) 0.7 degrees Celsius \n B) 2 degrees Celsius \n C) 1.4 degrees Celsius \n D) 0 degrees Celsius")
+                qthree = qthree.toLowerCase()
+                if (qthree=="a") {
+                    alert("Correct!")
+                }
+                else {
+                    alert("Incorrect! The correct answer is A.")
+                }
+                alert("As the Earth moved out of ice ages over the past million years, the global temperature rose a total of 4 to 7 degrees Celsius over about 5,000 years. In the past century alone, the temperature has climbed 0.7 degrees Celsius, roughly ten times faster than the average rate of ice-age-recovery warming.")
+                //fourth question
+                var qfour = prompt("How much of the waste-water is dumped back into oceans and rivers? \n A) 60% \n B) 20% \n C) 95% \n D) 80%")
+                qfour = qfour.toLowerCase()
+                if (qfour=="d") {
+                    alert("Correct!")
+                }
+                else {
+                    alert("Incorrect! The correct answer is D.")
+                }
+                alert("80 percent of the world's wastewater is dumped—largely untreated—back into the environment, polluting rivers, lakes, and oceans. This widespread problem of water pollution is jeopardizing our health.")
+                //fifth question
+                var qfive = prompt("How many people in the world don't have access to drinking water? \n A) 1 billion \n B) 785 million \n C) 683 million \n D) 500 million")
+                qfive = qfive.toLowerCase()
+                if (qfive=="b") {
+                    alert("Correct!")
+                }
+                else {
+                    alert("Incorrect! The correct answer is B.")
+                }
+                alert("785 million people lack even a basic drinking-water service, including 144 million people who are dependent on surface water. Globally, at least 2 billion people use a drinking water source contaminated with feces. Contaminated water can transmit diseases such diarrhea, cholera, dysentery, typhoid, and polio.")
+            }
+	    </script>
+
+        <!-- Play Button -->
+        <button type="button" onclick="pollution()">Play</button>
+
+
+
+        <!-- Endangered Species -->
+        <h2> Endangered Species </h2>
+        <p> Play our endangered species trivia! </p>
+
+        <!-- Trivia -->
+        <script> 
+            function endSpecies() {
+                alert("This is the endangered species trivia.")
+                var animal = prompt("What endangered animal would you like to learn about? Enter 1-3: \n 1) Tiger \n 2) Polar Bear \n 3) Elephant")
+
+                //tiger
+                if (animal == 1) {
+                    //first question
+                    var qone = prompt("How many tigers are left in the wild? \n A) 3,900 \n B) 10,100 \n C) 400 \n D) 8,000")
+                    qone = qone.toLowerCase()
+                    if (qone=="a") {
+                        alert("Correct!")
+                    }
+                    else {
+                        alert("Incorrect! The correct answer is A.")
+                    }
+                    alert("Around 3,900 tigers live in the wild. They live in a few patches of forest in Asia. Illegal hunting for tiger pelts, teeth, and other tiger parts play a large role in their decline in population. Another large factor is habitat loss through logging and agriculture.")
+                    //second question
+                    var qtwo = prompt("How much of their historic range has been lost? \n A) 33% \n B) 14% \n C) 93% \n D) 65%")
+                    qtwo = qtwo.toLowerCase()
+                    if (qtwo=="c") {
+                        alert("Correct!")
+                    }
+                    else {
+                        alert("Incorrect! The correct answer is C.")
+                    }
+                    alert("Much of their original historic range of habitat has been destroyed through clearing land for agriculture and forest destruction.")
+                    //third question
+                    var qthree = prompt("What are some ways that you can help? \n A) Donate to enviromental organizations \n B) Educate the public about tigers \n C) Monitor tiger numbers, population trends, and threats to tigers and their habitats. \n D) All of the above")
+                    qthree = qthree.toLowerCase()
+                    if (qthree=="d") {
+                        alert("Correct!")
+                    }
+                    else {
+                        alert("Incorrect! The correct answer is D.")
+                    }
+                    alert("Tigers are killed in huge numbers for their skins and bones or in retaliation for conflict with humans, their prey are killed by hunters to feed a local market for exotic meats and their remaining forest habitats are continuously converted to human uses.")
+                }
+            
+                //polar bear
+                else if (animal == 2) {
+                    //first question
+                    var qone = prompt("What color is a polar bear's tongue? \n A) Pink \n B) Black \n C) Blue \n D) Red")
+                    qone = qone.toLowerCase()
+                    if (qone=="c") {
+                        alert("Correct!")
+                    }
+                    else {
+                        alert("Incorrect! The correct answer is C.")
+                    }
+                    alert("Polar bears have blue tongues that sit among 42 razor-sharp teeth. They also have black skin under their fur.")
+                    //second question
+                    var qtwo = prompt("How fast can polar bears swim? \n A) 20 mph \n B) 6 mph \n C) 60 mph \n D) 1mph")
+                    qtwo = qtwo.toLowerCase()
+                    if (qtwo=="b") {
+                        alert("Correct!")
+                    }
+                    else {
+                        alert("Incorrect! The correct answer is B.")
+                    }
+                    alert("Polar bears are strong swimmers. They can reach speeds of 6 mph and hold their breath for more than a minute.")
+                    //third question
+                    var qthree = prompt("What is the greatest threat to polar bears? \n A) Unsustainable hunting \n B) Climate change \n C) Deforestation \n D) All of the above")
+                    qthree = qthree.toLowerCase()
+                    if (qthree=="b") {
+                        alert("Correct!")
+                    }
+                    else {
+                        alert("Incorrect! The correct answer is B.")
+                    }
+                    alert("Industrial development, conflict with humans and unsustainable hunting are all threats, but climate change is the greatest one. Shorter ice seasons from climate change result in less time for polar bears to find food.")
+                }
+
+                //elephant
+                else {
+                    //first question
+                    var qone = prompt("True or false, elephants have good memories? \n A) True \n B) False")
+                    qone = qone.toLowerCase()
+                    if (qone=="a") {
+                        alert("Correct!")
+                    }
+                    else {
+                        alert("Incorrect! The correct answer is A.")
+                    }
+                    alert("Researchers who studied African elephants in the wild learned that older, female elephants called matriarchs often lead herds. These matriarchs build up a strong memory over time that allows them to remember friends and enemies.")
+                    //second question
+                    var qtwo = prompt("What is a major reason for the decline of the elephant population? \n A)Wildfires \n B) Poaching for their skin \n C) Poaching for their tusks \n D) From fighting each other")
+                    qtwo = qtwo.toLowerCase()
+                    if (qtwo=="c") {
+                        alert("Correct!")
+                    }
+                    else {
+                        alert("Incorrect! The correct answer is C.")
+                    }
+                    alert("The illegal demand for ivory is the biggest driver of elephant poaching. Despite a global ban on international ivory sales, tens of thousands of elephants are killed annually to meet a growing demand for ivory products. You can save elephants by making sure you never buy ivory.")
+                    //third question
+                    var qthree = prompt("What fraction of the elephant polulation is left? \n A) 1/3 \n B) 1/4 \n C) 1/5  \n D) 1/10")
+                    qthree = qthree.toLowerCase()
+                    if (qthree=="d") {
+                        alert("Correct!")
+                    }
+                    else {
+                        alert("Incorrect! The correct answer is D.")
+                    }
+                    alert("The Asian elephant, whose habitat ranges over 13 countries across Asia, is an endangered species with less than 40,000 remaining worldwide less than a tenth of the African elephant population.")
+                }
+            
+            } 
+        </script>
+
+        <!-- Play Button -->
+        <button type="button" onclick="endSpecies()">Play</button>
+
+
+
+        <!-- Invasive Species -->
+        <h2> Invasive Species </h2>
+        <p> Play our invasive species trivia! </p>
+
+        <!-- Trivia -->
+        <script>
+            function invSpecies() {
+                alert("This is the invasive species trivia.")
+                //first question
+                var qone = prompt("How do most invasive species spread? \n A) By themselves \n B) Human activities \n C) By other animals \n D) All of the above")
+                qone = qone.toLowerCase()
+                if (qone=="b") {
+                    alert("Correct!")
+                } 
+                else {
+                    alert("Incorrect! the correct answer is B.")
+                }
+                alert("Invasive species are primarily spread by human activities, often unintentionally. People, and the goods we use, travel around the world very quickly, and they often carry uninvited species with them. Ships can carry aquatic organisms in their ballast water, while smaller boats may carry them on their propellers.")
+                //second question
+                var qtwo = prompt("What percentage of animals are affected by invasive species? \n A) 32% \n B) 69% \n C) 87% \n D) 42%")
+                qtwo = qtwo.toLowerCase()
+                if (qtwo=="b") {
+                    alert("Correct!")
+                }
+                else {
+                    alert("Incorrect! The correct answer is B.")
+                }
+                alert("Invasive species are among the leading threats to native wildlife. Approximately 42 percent of threatened or endangered species are at risk due to invasive species.")
+                //third question
+                var qthree = prompt("Who can be affected by invasive species? \n A) Humans \n B) Land Animals \n C) Sea Lands \n D) All of the above")
+                qthree = qthree.toLowerCase()
+                if (qthree=="d") {
+                    alert("Correct!")
+                }
+                else {
+                    alert("Incorrect! The correct answer is D.")
+                }
+                alert("Even humans are affected by invasive species. Human health and economies are also at risk from invasive species. The impacts of invasive species on our natural ecosystems and economy cost billions of dollars each year. Many of our commercial, agricultural, and recreational activities depend on healthy native ecosystems.")
+                //fourth question
+                var qfour = prompt("Which is not an invasive species in Maryland? \n A) Mute Swans \n B) Nutria  \n C) Zebra Mussels \n D) Asian Carp")
+                qfour = qfour.toLowerCase()
+                if (qfour=="d") {
+                    alert("Correct!")
+                }
+                else {
+                    alert("Incorrect! The correct answer is D.")
+                }
+                alert("Several species of heavy-bodied cyprinid fishes are collectively known in the United States as Asian carp. Cyprinids from the Indian subcontinent—for example, catla and mrigal. The Asian carp is considered an invasive species in the United States, and are commonly found in southern states.")
+            }
+        </script>
+
+        <!-- Play Button -->
+        <button type="button" onclick="invSpecies()">Play</button>
+
+
+
+        <!-- Water -->
+        <h2> Water </h2>
+        <p> Play our water trivia! </p>
+
+        <!-- Trivia -->
+        <script>
+            function water() {
+                alert("This is the water trivia.")
+                //first question
+                var qone = prompt("What is the average rate of increase each year for sea level? \n A) 3.4 mm \n B) 5 mm \n C) 1.23 cm \n D) 4.3 cm")
+                qone = qone.toLowerCase()
+                if (qone=="a") {
+                    alert("Correct!")
+                } 
+                else {
+                    alert("Incorrect! the correct answer is A.")
+                }
+                alert("In 2016 the rate was estimated to be 3.4 millimeters per year, and it is expected to jump higher by the end of the century. Scientists with the Intergovernmental Project on Climate Change predict that global sea level will rise between 0.3 and 1 meter by 2100.")
+                //second question
+                var qtwo = prompt("What percentage of the world is fresh water? \n A) 3% \n B) 7% \n C) 2.5% \n D) 1.3%")
+                qtwo = qtwo.toLowerCase()
+                if (qtwo=="c") {
+                    alert("Correct!")
+                }
+                else {
+                    alert("Incorrect! The correct answer is C.")
+                }
+                alert("Freshwater makes up a very small fraction of all water on the planet. While nearly 70 percent of the world is covered by water, only 2.5 percent of it is fresh. The rest is saline and ocean-based. Even then, just 1 percent of our freshwater is easily accessible, with much of it trapped in glaciers and snowfields.")
+                //third question
+                var qthree = prompt("How many people die from dirty water each year? \n A) 485,000 \n B) 523,000 \n C) 1 million \n D) 365,000")
+                qthree = qthree.toLowerCase()
+                if (qthree=="a") {
+                    alert("Correct!")
+                }
+                else {
+                    alert("Incorrect! The correct answer is A.")
+                }
+                alert("Contaminated drinking water is estimated to cause 485,000 diarrheal deaths each year. By 2025, half of the world's population will be living in water-stressed areas. In least developed countries, 22% of health care facilities have no water service, 21% no sanitation service, and 22% no waste management service.")
+                //fourth question
+                var qfour = prompt("How many people don't have access to clean water? \n A) 535,000 \n B) 2.3 million \n C) 1.6 million \n D) 391,000")
+                qfour = qfour.toLowerCase()
+                if (qfour=="c") {
+                    alert("Correct!")
+                }
+                else {
+                    alert("Incorrect! The correct answer is C.")
+                }
+                alert("About 1.6 million Americans don't have running water or indoor plumbing. Many people also don't have access to adequate wastewater treatment, meaning tainted water pollutes their groundwater and communities.")
+            }
+        </script>
+
+        <!-- Play Button -->
+        <button type="button" onclick="water()">Play</button>
+
+
+
+        <!-- Solutions -->
+        <h2> Solutions </h2>
+        <p> Learn about and brainstorm various solutions to help reduce climate change! </p>
+
+        <!-- List -->
+        <script>
+            function solutions() {
+                var answer = prompt("What are some of your solutions on climate change and other problems? Brainstorm here.")
+                alert(answer + " was/were your answer(s). Very good idea(s)!")
+                alert("Some solutions we came up with were: \n 1. Forego Fossil Fuels \n 2. Improve infrastructure to be more efficient \n 3. Live in urban locations/live closer to work \n 4. Buy less things \n 5. Forego meat \n 6. Plant trees and cut down less trees \n 7. Unplug appliances when not in use \n 8. Have less children")
+            }
+        </script>
+
+        <!-- Learn Button -->
+        <button type="button" onclick="solutions()">Learn and Brainstorm</button>
+
+        <h3></h3>
+    </body>
+
+</html>
