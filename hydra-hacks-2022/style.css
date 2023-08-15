@@ -1,0 +1,46 @@
+/*
+THEME STUFF
+soft pastel?: https://www.schemecolor.com/soft-and-colorful-2.php 
+*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.listBox {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 5%;
+  height: 50%;
+}
+
+.timerButton {
+  width: 2rem;
+}
+
+#listInput {
+  background-color: #F8F1AE;
+}
+
+#timer {
+    font-size: 150px;
+    margin: 0 auto;
+    width: 1000px;
+  }
+  
+  #controls {
+    margin: 0 auto;
+    width: 600px;  
+   }
+  
+  #controls button {
+    font-size: 24px;
+  }
